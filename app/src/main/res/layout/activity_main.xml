@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0ECD2"
+    tools:context=".ui.MainActivity">
+
+    <TextView
+        android:id="@+id/tvTranquility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tranquility Trek"
+        android:textColor="#4C8233"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="68dp">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="75dp"
+            android:background="#4C8233" />
+
+        <ImageView
+            android:id="@+id/ivSplashImage"
+            android:layout_width="367dp"
+            android:layout_height="317dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/mindbeauty" />
+
+        <TextView
+            android:id="@+id/tvGetStarted"
+            android:layout_width="213dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="25dp"
+            android:text="Get Started"
+            android:textColor="#4C8233"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#4C8233"
+            android:text="Sign Up"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/btnLogIn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#4C8233"
+            android:text="Log In"
+            app:cornerRadius="10dp" />
+
+        <TextView
+            android:id="@+id/tvThankYou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="15dp"
+            android:text="Thank you for choosing Tranquility Trek"
+            android:textColor="#4CAF50"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
